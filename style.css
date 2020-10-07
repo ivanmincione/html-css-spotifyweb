@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Arial", sans-serif;
+}
+
 h2{
     color: white;
     font-size: 50px;
@@ -23,9 +27,8 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* width: 200px; */
-    /* height: 100%; */
-    background-color: #141301;
+    background: rgb(57,46,20);
+    background: linear-gradient(135deg, rgba(57,46,20,1) 0%, rgba(0,0,0,1) 100%);
     opacity: 0.9;
     padding: 10px;
 }
@@ -113,6 +116,7 @@ section::-webkit-scrollbar-thumb{
     text-align: center;
     padding-top: 40px;
 }
+
 .header-section ul{
     list-style-type: none;
 }
@@ -150,7 +154,6 @@ section::-webkit-scrollbar-thumb{
 .cover-album{
     margin: 10px;
     max-width: 200px;
-
 }
 
 .cover-album img{
@@ -159,6 +162,7 @@ section::-webkit-scrollbar-thumb{
 }
 
 /* ------------------FOOTER-------------- */
+
 footer{
     height: 150px;
     background-color: #282828;
@@ -175,6 +179,7 @@ footer i:hover{
 }
 
 /* --------FOOTER LEFT----------- */
+
 .footer-left img{
     max-width: 100px;
 }
@@ -190,9 +195,8 @@ footer i:hover{
 }
 
 /* -------FOOTER CENTRAL------------- */
-.footer-central{
 
-    /* width: 500px; */
+.footer-central{
     padding: 20px 0;
     text-align: center;
 }
@@ -224,6 +228,7 @@ footer i:hover{
 }
 
 /* --------------FOOTER RIGHT----------- */
+
 .footer-right{
     text-align: center;
     padding: 40px 0;
