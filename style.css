@@ -79,6 +79,18 @@ section{
     overflow: auto;
 }
 
+/* ---------------TEST PERSONALIZZAZIONE SCROLLBAR----------- */
+section::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 10px;
+}
+section::-webkit-scrollbar-thumb{
+	border-radius: 4px;
+    background-color: rgba(30, 250, 5, 0.2);
+    box-shadow: 0 0 3px rgb(55, 236, 50);
+}
+/* ------------------------SCROLL------------------------ */
+
 .toggle-menu{
     display: none;
 }
@@ -111,10 +123,10 @@ section{
 }
 
 .header-section ul li a{
-text-decoration: none;
-text-transform: uppercase;
-color: lightgray;
-margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: lightgray;
+    font-size: 20px;
 }
 
 .header-section ul li a:hover{
@@ -156,6 +168,13 @@ footer{
     color: lightgray;
 }
 
+footer i:hover{
+    cursor: pointer;
+    color: #35BA54;
+
+}
+
+/* --------FOOTER LEFT----------- */
 .footer-left img{
     max-width: 100px;
 }
@@ -170,18 +189,67 @@ footer{
     margin-right: 10px;
 }
 
-
+/* -------FOOTER CENTRAL------------- */
 .footer-central{
-    background-color: aliceblue;
-    width: 500px;
+
+    /* width: 500px; */
+    padding: 20px 0;
+    text-align: center;
 }
 
+.footer-central i{
+    padding: 0 30px;
+    font-size: 20px;
+}
 
+.bar-media-player{
+    margin-top: 30px;
+}
+
+.bar-media-player .bar-music{
+    border: 2px solid lightgray;
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.bar-music::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    position: absolute;
+    top: -8px;
+    color: lightgray;
+    font-weight: bold;
+}
+
+/* --------------FOOTER RIGHT----------- */
 .footer-right{
-    background-color: aliceblue;
-    width: 300px;
-
+    text-align: center;
+    padding: 40px 0;
 }
+
+.footer-right i{
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.footer-right .bar-volume{
+    border: 2px solid lightgray;
+    display: inline-block;
+    width: 50px;
+    position: relative;
+}
+
+.bar-volume::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    position: absolute;
+    top: -8px;
+    color: lightgray;
+    font-weight: bold;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -189,19 +257,13 @@ footer{
     aside p,span{
         display: none;
     }
+
     aside {
         align-items: center;
     }
+
     aside .logo img{
         max-width: 100px;
-    }
-
-    .toggle-menu{
-        display: block;
-    }
-
-    .header-section{
-        display: none;
     }
 
     .playlist{
@@ -211,6 +273,46 @@ footer{
 
     h2{
         font-size: 20px;
-
     }
+
+    .footer-left img{
+        max-width: 50px;
+    }
+
+    .footer-central i{
+        padding: 0 5px;
+    }
+
+}
+
+@media screen and (max-width: 1092px){
+
+    .toggle-menu{
+        display: block;
+    }
+
+    .header-section{
+        display: none;
+    }
+
+    .footer-left .title-cover{
+        display: none;
+    }
+
+    .footer-right{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .header-section ul li{
+        margin: 20px 10px;
+    }
+
+    .header-section ul li a{
+        font-size: 15px;
+    }
+
 }
