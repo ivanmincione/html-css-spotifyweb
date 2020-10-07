@@ -148,8 +148,39 @@ margin-top: 20px;
 
 /* ------------------FOOTER-------------- */
 footer{
-    height: 100px;
+    height: 150px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: lightgray;
+}
+
+.footer-left img{
+    max-width: 100px;
+}
+
+.footer-left .title-cover{
+    float: right;
+    padding: 50px 20px;
+}
+
+.footer-left .title-cover p{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.footer-central{
+    background-color: aliceblue;
+    width: 500px;
+}
+
+
+.footer-right{
+    background-color: aliceblue;
+    width: 300px;
+
 }
 
 
