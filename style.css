@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+h2{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
 /* contenitore generale di ASIDE E SECTION */
 main{
     height: calc( 100vh - 100px);
@@ -17,8 +23,8 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 200px;
-    height: 100%;
+    /* width: 200px; */
+    /* height: 100%; */
     background-color: #141301;
     opacity: 0.9;
     padding: 10px;
@@ -69,9 +75,12 @@ aside{
 
 /* ----------------SEZIONE CENTRALE----------------- */
 section{
-    width: calc( 100% - 200px);
-    height: 100%;
     position: relative;
+    overflow: auto;
+}
+
+.toggle-menu{
+    display: none;
 }
 
 .toggle-menu i{
@@ -98,13 +107,14 @@ section{
 
 .header-section ul li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 20px 20px;
 }
 
 .header-section ul li a{
 text-decoration: none;
 text-transform: uppercase;
 color: lightgray;
+margin-top: 20px;
 }
 
 .header-section ul li a:hover{
@@ -113,11 +123,63 @@ color: lightgray;
     border-bottom: 2px solid #35BA54;
 }
 
+/*  ------------sezione album---------- */
 
+.playlist{
+    padding: 50px 100px;
+}
 
+.box-album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cover-album{
+    margin: 10px;
+    max-width: 200px;
+
+}
+
+.cover-album img{
+    border-radius: 50%;
+    width: 100%;
+}
 
 /* ------------------FOOTER-------------- */
 footer{
     height: 100px;
     background-color: #282828;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    aside p,span{
+        display: none;
+    }
+    aside {
+        align-items: center;
+    }
+    aside .logo img{
+        max-width: 100px;
+    }
+
+    .toggle-menu{
+        display: block;
+    }
+
+    .header-section{
+        display: none;
+    }
+
+    .playlist{
+        margin-top: 40px;
+        padding: 20px 20px;
+    }
+
+    h2{
+        font-size: 20px;
+
+    }
 }
