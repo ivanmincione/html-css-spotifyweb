@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* contenitore generale di ASIDE E SECTION */
 main{
     height: calc( 100vh - 100px);
     display: flex;
@@ -11,6 +12,7 @@ main{
     background: linear-gradient(135deg, rgba(147,153,46,1) 10%, rgba(10,7,1,1) 96%);
 }
 
+/* -------------ASIDE A SINISTRA CON LOGO E MENU-------------- */
 aside{
     display: flex;
     flex-direction: column;
@@ -34,7 +36,6 @@ aside{
     color: lightgray;
 }
 
-
 .menu-aside i{
     padding: 10px 10px;
     font-size: 22px;
@@ -47,25 +48,75 @@ aside{
 
 .menu-aside i:hover{
     color: white;
-    font-weight: bold;
     cursor: pointer;
     border-left: 3px solid green;
+}
+
+.menu-aside p{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.menu-aside p:hover{
+    color: white;
+    cursor: pointer;
 }
 
 #user{
     border-top: 1px solid white;
 }
 
-
-
-
-
+/* ----------------SEZIONE CENTRALE----------------- */
 section{
     width: calc( 100% - 200px);
     height: 100%;
+    position: relative;
+}
+
+.toggle-menu i{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.toggle-menu i:hover{
+    cursor: pointer;
+    color: #35BA54;
+}
+
+.header-section{
+    text-align: center;
+    padding-top: 40px;
+}
+.header-section ul{
+    list-style-type: none;
+}
+
+.header-section ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header-section ul li a{
+text-decoration: none;
+text-transform: uppercase;
+color: lightgray;
+}
+
+.header-section ul li a:hover{
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid #35BA54;
 }
 
 
+
+
+/* ------------------FOOTER-------------- */
 footer{
     height: 100px;
     background-color: #282828;
