@@ -16,7 +16,7 @@ h2{
 
 /* contenitore generale di ASIDE E SECTION */
 main{
-    height: calc( 100vh - 100px);
+    height: calc( 100vh - 150px);
     display: flex;
     background: rgb(147,153,46);
     background: linear-gradient(135deg, rgba(147,153,46,1) 10%, rgba(10,7,1,1) 96%);
@@ -29,7 +29,7 @@ aside{
     align-items: flex-start;
     background: rgb(57,46,20);
     background: linear-gradient(135deg, rgba(57,46,20,1) 0%, rgba(0,0,0,1) 100%);
-    opacity: 0.9;
+    opacity: 0.8;
     padding: 10px;
 }
 
@@ -140,6 +140,10 @@ section::-webkit-scrollbar-thumb{
 }
 
 /*  ------------sezione album---------- */
+.container-margin-auto{
+    width: 100%;
+    margin: 0 auto;
+}
 
 .playlist{
     padding: 50px 100px;
@@ -168,7 +172,7 @@ footer{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 20px 20px;
     color: lightgray;
 }
 
