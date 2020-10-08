@@ -131,12 +131,16 @@ section::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     color: lightgray;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .header-section ul li a:hover{
     color: white;
     cursor: pointer;
     border-bottom: 2px solid #35BA54;
+    box-shadow: 0 0 20px rgba(102, 252, 107, 0.6),
+                inset 0 0 20px rgb(155, 250, 156);
+    border-radius: 5px;
 }
 
 /*  ------------sezione album---------- */
@@ -163,6 +167,15 @@ section::-webkit-scrollbar-thumb{
 .cover-album img{
     border-radius: 50%;
     width: 100%;
+    transition: 0.3s;
+}
+
+.cover-album img:hover {
+  transform: rotate(10deg);
+  cursor: pointer;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(255,255,255,.6),
+              inset 0 0 20px rgba(255,255,255,1);
 }
 
 /* ------------------FOOTER-------------- */
